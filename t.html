@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+label {
+  text-align: center;
+  background-color: pink;
+  color: black;
+  font-weight: bold;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 11px;
+}
+button {
+  background-color: green; /* Green */
+  border: none;
+  color: green;
+  padding: 5px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+}
+
+</style>
+</head>
+<body onload="myFunction()">
+<div id="otpform">
+<p id="demo"></p>
+<label>Enter OTP</label><br>
+<input type="text" id="otp" name="otp" maxlength="4" onkeypress="javascript:return isNumber(event)" onblur="checkotp()" ><br>
+ <span id="error"></span><br><br>
+ <button style="color:white" style="background-color:red" type="button" id="vButton" value="Validate" onclick="validate();">validate</button>
+ <!--<button style="color:white" type="button" id="vButton" value="Validate" onclick="validate();">validate</button>-->
+ <!--####<button style="color:white" type="button"  value="Submit" onclick="validate();">validate</button>-->
+<!--<input type="button" id="vButton" name="validate" value="Validate" onclick="validate()" />-->
+</div>
+<span id="success" style="display:none"></span><br>
+<span id="error1" style="display:none"></span><br>
+<script src="t.js"></script>
+</body>
+</html>

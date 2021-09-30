@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div { 
+    
+    align-content: center;
+    align-items: center;
+   
+}
+   
+form {   
+    margin: 0 auto;
+    width: 300px;
+    border:blue; border-width:5px;border-style:solid;
+    align-content: center;
+    align-items: center;
+}
+label {
+  text-align: center;
+  background-color: pink;
+  color: black;
+  font-weight: bold;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 11px;
+}
+button {
+  background-color: green; /* Green */
+  border: none;
+  color: green;
+  padding: 5px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+}
+
+</style>
+</head>
+<body>
+
+<!--<h2>HTML Forms</h2>-->
+
+<!-- </script> -->
+<form name="myform" id="myform">
+
+	<div id="fields">
+		<label>FullName:</label><br>
+		<input type="text" id="fname" name="fname" onkeypress="javascript:return isalpha(event)"  onblur=" fnameValidation()" ><br>
+		<span id="error1"></span><br><br>
+		<label>Email id:</label><br>
+		<input type="text" id="email" name="email"  onblur="emailValidation()" ><br>
+		<span id="error2"></span><br><br>
+		<label>Phone No:</label><br>
+		<div>
+		<input type="text" id="phno" name="phno" maxlength="19" onkeypress="javascript:return isNumber(event)"  onblur="myFunction1() "><span id="demo1" ></span>&nbsp;<span id="demo2" ></span>
+                 <span id="error3"></span><br><br>
+		</div><br>
+                 <p id="d"></p>
+		<!--<span id="error3"></span><br><br>-->
+                 <button style="color:white" style="background-color:red" type="button"  value="Submit" onclick="validate();">submit</button>
+		
+		<!--<input type="button" name="submit" value="Submit" onclick="validate();" /> -->
+	</div>
+  
+</form>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
